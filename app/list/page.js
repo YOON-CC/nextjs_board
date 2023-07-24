@@ -8,8 +8,6 @@ export default async function List() {
     let result = await db.collection('post').find().toArray()
     console.log(result[0].title)
 
-
-
     return (
       <div className="list-bg">
         {
